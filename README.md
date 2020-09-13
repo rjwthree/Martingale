@@ -1,4 +1,4 @@
-### Martingale
+# Martingale
 
 The Martingale betting system usually describes a strategy in which one doubles the bet after each loss until winning, theoretically yielding a net gain equal to the initial bet.
 
@@ -12,4 +12,6 @@ The probability of winning per hand was set to 48%, which is a reasonable estima
 
 ## Results
 
-The outcome with no betting ceiling is straightforward.
+The outcome with no betting ceiling is straightforward. Given a starting bet 's' and probability of winning 'p', the average gain per hand in the long run is s*p.
+
+The script sets s to $10 and p to .48, so the average win per hand is $4.80.
