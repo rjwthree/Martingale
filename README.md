@@ -16,4 +16,8 @@ The outcome with no betting ceiling is straightforward. Given a starting bet 's'
 
 The script sets s to $10 and p to .48, so the average win per hand is $4.80. Even a terrible blackjack player who wins only 40% of hands would win $4.00 per hand on average. The Martingale system is a long-run winning strategy when there is no betting ceiling.
 
-But in reality, there is always a ceiling. It's possible to succeed for a long time given a high ceiling, but the simulation demonstrates that any ceiling, no matter how high, causes the Martingale system to become a loser in the long run. No matter how much you have, eventually a spell of bad luck will arrive and cause you to keep doubling your money until it runs out.
+But in reality, there is always a ceiling. It's possible to succeed for a long time given a high ceiling, but the simulation demonstrates that any ceiling, no matter how high, causes the Martingale system to become a loser in the long run. No matter how much money you have, eventually a string of bad luck will arrive and cause you to keep doubling your money until you reach the ceiling. Regardless of why the ceiling exists — a house limit or finite wealth — your inability to recoup your losses by doubling the bet indefinitely until you win means that this strategy will lose.
+
+How much will you lose when there is a ceiling?
+
+## Visualization
