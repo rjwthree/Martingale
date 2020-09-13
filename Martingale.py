@@ -1,6 +1,7 @@
 import random as rm
 import datetime as dt
 import numpy as np
+
 w = count = 0 # net winnings, counter
 s = b = 10 # starting bet, current bet
 c = 0 # 1 if ceiling exists, 0 if not
