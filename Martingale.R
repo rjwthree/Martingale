@@ -1,3 +1,7 @@
+#########################################################
+############### Martingale betting system ###############
+#########################################################
+
 s <- b <- 10 # starting bet, current bet
 p <- 48 # probability of winning (%)
 c <- 0 # 1 if ceiling exists, 0 if not
