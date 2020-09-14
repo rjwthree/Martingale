@@ -2,13 +2,14 @@ import random as rm
 import datetime as dt
 import numpy as np
 
-w = count = 0 # net winnings, counter
 s = b = 10 # starting bet, current bet
 c = 0 # 1 if ceiling exists, 0 if not
-f = s*2**5 # s*2**_, where _ is the number of times s is doubled before reaching the ceiling
+f = 5 # number of losing bets required to reach the ceiling
 n = 10**7 # number of hands
 u = 10**6 # progress updates will print at multiples of this number
 p = 48 # probability of winning (%)
+w = count = 0 # net winnings, counter
+v = 2**f*s # value of the ceiling
 N = [] # all net winnings will be appended here
 Q = [b] # all current bets will be appended here
 
@@ -19,7 +20,7 @@ for i in hands: # for each hand
     if i > p: # if loss occurs
         w -= b # subtract current bet from net winnings
         b *= 2 # loss triggers doubling of current bet
-        if c == 1 and b > f*s: # but if doubling exceeds the ceiling
+        if c == 1 and b > v: # but if doubling exceeds the ceiling
             b = s # return current bet to starting bet
     else: # if win occurs
         w += b # add current bet to net winnings
@@ -36,4 +37,4 @@ Q.pop() # remove last bet because it was not placed
 
 print(str(w/n) + ' per hand, on average')
 print(str(min(N)) + ' at the nadir')
-print(str(max(Q)) + ' largest bet')
+print('Largest bet: ' + str(max(Q)))
