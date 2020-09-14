@@ -8,7 +8,7 @@ c <- 0 # 1 if ceiling exists, 0 if not
 f <- 5 # number of losing bets required to reach the ceiling
 n <- 10^7 # number of hands
 u <- 10^6 # progress updates will print at multiples of this number
-w <- count <- 0 # net winnings, counter
+w <- h <- 0 # net winnings, counter
 v <- s*2^f # value of the ceiling
 N <- Q <- numeric(n) # all net winnings, current bets will be inserted here
 
@@ -26,12 +26,11 @@ for (i in hands) { # for each hand
     b <- s # always return current bet to starting bet
   }
   
-  N[i] <- w # insert net winnings after each hand
-  Q[i] <- b # insert current bet after each hand
-  
-  count <- count + 1 # increment counter
-  if (count == 1) {print(paste0('Start at ', Sys.time()), quote = F)} # print start with timestamp
-  if (count %% u == 0) {print(paste0(count, ' at ', Sys.time()), quote = F)} # print updates with timestamps
+  h <- h + 1 # increment counter
+  N[h] <- w # insert net winnings after each hand
+  Q[h] <- b # insert current bet after each hand
+  if (h == 1) {print(paste0('Start at ', Sys.time()), quote = F)} # print start with timestamp
+  if (h %% u == 0) {print(paste0(h, ' at ', Sys.time()), quote = F)} # print updates with timestamps
 }
 
 Q <- c(s, Q[-length(Q)]) # add starting bet, remove last bet because it was not placed
