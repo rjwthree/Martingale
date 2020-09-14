@@ -11,7 +11,7 @@ c = 0 # 1 if ceiling exists, 0 if not
 f = 5 # number of losing bets required to reach the ceiling
 n = 10**7 # number of hands
 u = 10**6 # progress updates will print at multiples of this number
-w = count = 0 # net winnings, counter
+w = h = 0 # net winnings, counter
 v = s*2**f # value of the ceiling
 N = Q = [] # all net winnings, current bets will be appended here
 
@@ -31,11 +31,11 @@ for i in hands: # for each hand
     N.append(w) # append net winnings after each hand
     Q.append(b) # append current bet after each hand
     
-    count += 1 # increment counter
-    if count == 1: # print start with timestamp
+    h += 1 # increment counter
+    if h == 1: # print start with timestamp
         print('Start at ' + dt.datetime.now().strftime('%H:%M:%S %Y-%m-%d'))
-    if count % u == 0: # print updates with timestamps
-        print(str(count) + ' at ' + dt.datetime.now().strftime('%H:%M:%S %Y-%m-%d'))
+    if h % u == 0: # print updates with timestamps
+        print(str(h) + ' at ' + dt.datetime.now().strftime('%H:%M:%S %Y-%m-%d'))
     
 Q = [s] + Q[:-1] # add starting bet, remove last bet because it was not placed
 
