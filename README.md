@@ -26,4 +26,4 @@ The plots display what I meant by the deep intuition derived from simulations. T
 
 Three further examples show typical trajectories using a low, moderate, or high ceiling — specifically 2, 6, or 9 opportunities to double bets, respectively. With the low ceiling of $40, there are frequent periods of minor success but an average of about 70 cents per hand is lost in the long run. The moderate ceiling of $640 produces an average loss of about $1.54 per hand, and the high ceiling of $5,120 loses an average of about $2.31 per hand.
 
-Higher ceilings lead to longer winning streaks in which losses are consistently recovered and converted to a small gain. And because losses are larger and scarcer with higher ceilings, the outcome when stopped at a random point is more variable when the ceiling is higher.
+Higher ceilings lead to longer winning streaks in which losses are consistently recovered and converted to a small gain, whereas the trend for low ceilings is jagged. And because losses are larger and scarcer with higher ceilings, the outcome when stopped at a random point is more variable when the ceiling is higher.
