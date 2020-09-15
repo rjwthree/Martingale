@@ -6,7 +6,7 @@ In a coin flipping example, one could bet on heads repeatedly until winning. Ima
 
 But does this work in practice? In real gambling scenarios no one can escalate betting amounts forever, either due to betting ceilings imposed by the house or limits on the wealth one can marshal.
 
-These scripts, written in Python and R, simulate a blackjack game played with a Martingale strategy. It's possible to provide answers through mathematical proof — see the [optional stopping theorem](https://math.uchicago.edu/~may/REU2019/REUPapers/Davidovsky.pdf) — but it's far more intuitively satisfying to observe how the strategy behaves in these simulations.
+These scripts, written in [Python](https://github.com/rjwthree/Martingale/blob/master/Martingale.py) and [R](https://github.com/rjwthree/Martingale/blob/master/Martingale.R), simulate a blackjack game played with a Martingale strategy. It's possible to provide answers through mathematical proof — see the [optional stopping theorem](https://math.uchicago.edu/~may/REU2019/REUPapers/Davidovsky.pdf) — but it's far more intuitively satisfying to observe how the strategy behaves in these simulations.
 
 The probability of winning per hand was set to 48%, which is a reasonable estimate for blackjack, although it varies depending on one's strategy and the behavior of other players. It can be easily adjusted to simulate other games.
 
