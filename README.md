@@ -16,7 +16,9 @@ The outcome with no betting ceiling is straightforward. Given a starting bet 's'
 
 The script sets s to $10 and p to .48, so the average win per hand is $4.80. Even a terrible blackjack player who wins only 40% of hands would win $4.00 per hand on average. The Martingale system is a long-run winning strategy when there is no betting ceiling.
 
-But in reality, there is always a ceiling. It's possible to succeed for long stretches, but the simulation demonstrates that any ceiling causes the Martingale system to become a loser in the long run. Eventually a series of losses will cause you to keep doubling your money until you reach the ceiling. Regardless of why the ceiling exists — a house limit or finite wealth — your inability to recoup your losses by doubling bets indefinitely until you win means that this strategy will lose any game where p < 50%. Higher ceilings lead to greater average losses, because bumping up against the ceiling leads to worse losses whereas recovering still yields only $10 (the starting bet) each time. This might be surprising: losses grow with higher ceilings, until the cap is removed altogether and instead of losing more, you start winning!
+But in reality, there is always a ceiling. It's possible to succeed for long stretches, but the simulation demonstrates that any ceiling causes the Martingale system to become a loser in the long run. Eventually a series of losses will cause you to keep doubling your money until you reach the ceiling. Regardless of why the ceiling exists — a house limit or finite wealth — your inability to recoup your losses by doubling bets indefinitely until you win means that this strategy will lose any game where p < 50%.
+
+Higher ceilings lead to greater average losses, because bumping up against the ceiling leads to exponentially larger losses whereas recovering still yields only $10 (the starting bet) each time. Recovery occurring more often does not compensate for the greater losses. The total picture might be surprising: losses grow with higher ceilings, until the cap is removed altogether and instead of losing more, you start winning!
 
 ## Visualization
 
