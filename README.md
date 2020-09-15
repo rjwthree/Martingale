@@ -1,5 +1,7 @@
 # Martingale
 
+[Here's some googling to do] (https://google.com). This text is next.
+
 The Martingale betting system usually describes a strategy in which one doubles the bet after each loss until winning, theoretically yielding a net gain equal to the initial bet.
 
 In a coin flipping example, one could bet on heads repeatedly until winning. Imagine you start with a bet of $10 and the coin shows tails, so you bet $20 and lose again, so you bet $40 and finally win. You lost $30 from the first two bets but the overall outcome is a gain of $10. This can be easily adapted to other games like blackjack.
