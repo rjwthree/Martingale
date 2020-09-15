@@ -6,7 +6,7 @@ In a coin flipping example, one could bet on heads repeatedly until winning. Ima
 
 But does this work in practice? In real gambling scenarios no one can escalate betting amounts forever, either due to betting ceilings imposed by the house or limits on the wealth one can marshal.
 
-These scripts, written in Python and R, simulate a blackjack game played with a Martingale strategy. It's possible to provide answers through mathematical proof — see the optional stopping theorem — but it's far more intuitively satisfying to observe how the strategy behaves in these simulations.
+These scripts, written in Python and R, simulate a blackjack game played with a Martingale strategy. It's possible to provide answers through mathematical proof — see the optional stopping theorem bit.ly/3hyoGeS — but it's far more intuitively satisfying to observe how the strategy behaves in these simulations.
 
 The probability of winning per hand was set to 48%, which is a reasonable estimate for blackjack, although it varies depending on one's strategy and the behavior of other players. It can be easily adjusted to simulate other games.
 
@@ -24,6 +24,6 @@ Higher ceilings lead to greater average losses, because bumping up against the c
 
 The plots display what I meant by the deep intuition derived from simulations. Two examples show typical trajectories of 10,000 blackjack hands played using the Martingale system with no ceiling, resulting in a net gain of about $48,000 accompanied by occasional losses of thousands or tens of thousands of dollars. Recovering these amounts through doubling would require bets that would exceed the table limits at most casinos.
 
-Three further examples show typical trajectories using a low, moderate, or high ceiling — representing 2, 6, or 10 opportunities to double bets, respectively. With the low ceiling of $40, there are frequent periods of minor success but an average of about 70 cents per hand is lost in the long run. The moderate ceiling of $640 produces similar patterns with an average loss of about $1.54 per hand, and the high ceiling of $10,240 loses an average of about $2.60 per hand.
+Three further examples show typical trajectories using a low, moderate, or high ceiling — specifically 2, 6, or 9 opportunities to double bets, respectively. With the low ceiling of $40, there are frequent periods of minor success but an average of about 70 cents per hand is lost in the long run. The moderate ceiling of $640 produces similar patterns with an average loss of about $1.54 per hand, and the high ceiling of $5,120 loses an average of about $2.30 per hand.
 
 Because losses are larger and scarcer with higher ceilings, the outcome when stopped at a random point is more variable when the ceiling is higher.
