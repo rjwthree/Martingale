@@ -1,6 +1,6 @@
 # Martingale
 
-[Here's some googling to do] (https://google.com). This text is next.
+[Here's some googling to do](https://google.com). This text is next.
 
 The Martingale betting system usually describes a strategy in which one doubles the bet after each loss until winning, theoretically yielding a net gain equal to the initial bet.
 
