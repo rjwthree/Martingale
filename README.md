@@ -22,7 +22,7 @@ Higher ceilings lead to greater average losses, because bumping up against the c
 
 ## Visualization
 
-The plots display what I meant by the deep intuition derived from simulations. Two examples show typical trajectories of 10,000 blackjack hands played using the Martingale system with no ceiling, resulting in a net gain of about $48,000 accompanied by occasional losses of thousands or tens of thousands of dollars. Recovering these amounts through doubling would require bets that would exceed the table limits at most casinos.
+The plots display what I meant by the deep intuition derived from simulations. Two examples show typical trajectories of 10,000 blackjack hands played using the Martingale system with no ceiling, resulting in a net gain of about $48,000 accompanied by occasional losses of thousands or tens of thousands of dollars. Recovering these amounts through doubling would require bets that exceed the table limits at most casinos.
 
 Three further examples show trajectories using a low, moderate, or high ceiling — specifically 2, 6, or 9 opportunities to double bets, respectively. With the low ceiling of $40, there are frequent periods of minor success but an average of about 70 cents per hand is lost in the long run. The moderate ceiling of $640 produces an average loss of about $1.54 per hand, and the high ceiling of $5,120 loses an average of about $2.31 per hand.
 
