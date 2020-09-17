@@ -12,7 +12,7 @@ The probability of winning per hand was set to 48%, which is a reasonable estima
 
 ## Results
 
-The outcome with no betting ceiling is straightforward. Given a starting bet 's' and probability of winning 'p', the average gain per hand is s*p.
+For the math behind the upcoming statements, see the PDF with all the little details. The outcome with no betting ceiling is straightforward. Given a starting bet 's' and probability of winning 'p', the average gain per hand is s*p.
 
 The script sets s to $10 and p to .48, so the average win per hand is $4.80. Even a terrible blackjack player who wins only 40% of hands would win $4.00 per hand on average. The Martingale system is a long-run winning strategy when there is no betting ceiling.
 
