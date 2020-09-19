@@ -12,10 +12,10 @@ w <- h <- 0 # net winnings, counter
 v <- s*2^f # value of the ceiling
 N <- Q <- numeric(n) # all net winnings, current bets will be inserted here
 
-hands <- sample(1:100, size = n, replace = T) # generate n random integers between 1 and 100
+hands <- sample(0:1, size = n, replace = T, prob = c(100-p, p)) # 0 for loss, 1 for win
 
 for (i in hands) { # for each hand
-  if (i > p) { # if loss occurs
+  if (i == 0) { # if loss occurs
     w <- w - b # subtract current bet from net winnings
     b <- 2*b # loss triggers doubling of current bet
     if (c == 1 & b > v) { # but if doubling exceeds the ceiling
