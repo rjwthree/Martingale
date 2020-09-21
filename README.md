@@ -12,9 +12,9 @@ The probability of winning per hand was set to 48%, which is a reasonable estima
 
 ## Results
 
-For the math behind the upcoming statements, see the PDF with [all the little details](https://github.com/rjwthree/Martingale/blob/master/little%20details.pdf). The outcome with no betting ceiling is straightforward. Given a starting bet 's' and probability of winning 'p', the average gain per hand is s*p.
+For the math behind the upcoming statements, see the PDF with [all the little details](https://github.com/rjwthree/Martingale/blob/master/little%20details.pdf), which corroborates the simulation results in far more accessible terms than any other resource I can find.
 
-The script sets s to $10 and p to .48, so the average win per hand is $4.80. Even a terrible blackjack player who wins only 40% of hands would win $4.00 per hand on average. The Martingale system is a long-run winning strategy when there is no betting ceiling.
+The outcome with no betting ceiling is straightforward. Given a starting bet 's' and probability of winning 'p', the average gain per hand is s*p. The script sets s to $10 and p to .48, so the average win per hand is $4.80. Even a terrible blackjack player who wins only 40% of hands would win $4.00 per hand on average. The Martingale system is a long-run winning strategy when there is no betting ceiling.
 
 But in reality, there is always a ceiling. It's possible to succeed for long stretches, but the simulation demonstrates that any ceiling causes the Martingale system to become a loser in the long run. Eventually a series of losses will cause you to keep doubling your money until you reach the ceiling. Regardless of why the ceiling exists — a house limit or finite wealth — your inability to recoup your losses by doubling bets indefinitely until you win means that this strategy will lose any game where p < 50%.
 
