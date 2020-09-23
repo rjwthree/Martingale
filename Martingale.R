@@ -44,17 +44,17 @@ print(paste0('Largest bet: ', max(Q)), quote = F)
 ##### Expected winnings per hand #####
 
 s <- 10 # starting bet
-p <- .48 # probability of winning
+p <- .52 # probability of losing
 c <- 0 # 1 if ceiling exists, 0 if not
 f <- 2 # number of losing bets required to reach the ceiling
 
 if (c == 0) { # no ceiling
-  print(paste0(s*p, ' per hand, on average'), quote = F)
+  print(paste0(s*(1-p), ' per hand, on average'), quote = F)
 } else if (c == 1) { # ceiling
   q <- r <- numeric(f+1)
   for (i in 0:f) {
-    q[i+1] <- (2*(1-p))^i
-    r[i+1] <- (1-p)^i
+    q[i+1] <- (2*p)^i
+    r[i+1] <- p^i
   }
-  print(paste0(s*(2*p-1)*sum(q)/sum(r), ' per hand, on average'), quote = F)
+  print(paste0(s*(1-2*p)*sum(q)/sum(r), ' per hand, on average'), quote = F)
 }
