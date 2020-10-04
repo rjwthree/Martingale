@@ -3,7 +3,7 @@
 #########################################################
 
 s <- b <- 10 # starting bet, current bet
-p <- .48 # probability of winning
+p <- .52 # probability of winning
 c <- 0 # 1 if ceiling exists, 0 if not
 f <- 2 # number of losing bets required to reach the ceiling
 n <- 10^7 # number of hands
@@ -12,7 +12,7 @@ w <- h <- 0 # net winnings, counter
 v <- s*2^f # value of the ceiling
 N <- Q <- numeric(n) # all net winnings, current bets will be inserted here
 
-hands <- sample(0:1, size = n, replace = T, prob = c(1-p, p)) # 0 for loss, 1 for win
+hands <- sample(0:1, size = n, replace = T, prob = c(p, 1-p)) # 0 for loss, 1 for win
 
 for (i in hands) { # for each hand
   if (i == 0) { # if loss occurs
@@ -58,3 +58,8 @@ if (c == 0) { # no ceiling
   }
   print(paste0(s*(1-2*p)*sum(q)/sum(r), ' per hand, on average'), quote = F)
 }
+
+
+
+
+
