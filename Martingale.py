@@ -59,3 +59,9 @@ elif c == 1: # ceiling
         q.append((2*p)**i)
         r.append(p**i)
     print(str(s*(1-2*p)*sum(q)/sum(r)) + ' per hand, on average')
+
+    
+    
+    
+    
+    
