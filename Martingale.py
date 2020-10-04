@@ -64,4 +64,3 @@ elif c == 1: # ceiling
     
     
     
-    
