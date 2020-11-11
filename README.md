@@ -25,13 +25,13 @@ Higher ceilings lead to greater average losses, because bumping up against the c
 The plots are what give these simulations their intuitive value. [Two](https://raw.githubusercontent.com/rjwthree/Martingale/master/Martingale%20no%20ceiling%20ex%201.png) [examples](https://raw.githubusercontent.com/rjwthree/Martingale/master/Martingale%20no%20ceiling%20ex%202.png) show typical trajectories of 10,000 blackjack hands played using the Martingale system with no ceiling, resulting in a net gain of about $48,000 accompanied by occasional losses of thousands or tens of thousands of dollars. Recovering these amounts through doubling would require bets that exceed the table limits at most casinos.
 
 <p align="center">
-<img src="https://github.com/rjwthree/Martingale/blob/master/Martingale%20no%20ceiling%20ex%201.png" width="424" height="300"/>
+<img src="https://github.com/rjwthree/Martingale/blob/master/Martingale%20no%20ceiling%20ex%201.png" width="636" height="450"/>
 </p>
 
 Three further examples show trajectories using a [low](https://raw.githubusercontent.com/rjwthree/Martingale/master/Martingale%20ceiling%20ex%201%20-%20low.png), [moderate](https://raw.githubusercontent.com/rjwthree/Martingale/master/Martingale%20ceiling%20ex%202%20-%20moderate.png), or [high](https://raw.githubusercontent.com/rjwthree/Martingale/master/Martingale%20ceiling%20ex%203%20-%20high.png) ceiling — specifically 2, 6, or 9 opportunities to double bets, respectively. Whereas the trend for low ceilings is jagged, higher ceilings generate longer winning streaks in which losses are consistently recovered and converted to a small gain. And because losses are larger and scarcer with higher ceilings, the outcome when stopped at a random point is more variable. The high ceiling trends are so diverse that it is impossible to select a single typical trajectory.
 
 <p align="center">
-<img src="https://github.com/rjwthree/Martingale/blob/master/Martingale%20ceiling%20ex%201%20-%20low.png" width="424" height="300"/>
+<img src="https://github.com/rjwthree/Martingale/blob/master/Martingale%20ceiling%20ex%201%20-%20low.png" width="636" height="450"/>
 </p>
 
 With the [low](https://raw.githubusercontent.com/rjwthree/Martingale/master/Martingale%20ceiling%20ex%201%20-%20low.png) ceiling of $40, there are frequent periods of minor success but an average of about 70 cents per hand is lost in the long run. The [moderate](https://raw.githubusercontent.com/rjwthree/Martingale/master/Martingale%20ceiling%20ex%202%20-%20moderate.png) ceiling of $640 produces an average loss of about $1.53 per hand, and the [high](https://raw.githubusercontent.com/rjwthree/Martingale/master/Martingale%20ceiling%20ex%203%20-%20high.png) ceiling of $5,120 loses an average of about $2.31 per hand. See [here](https://github.com/rjwthree/Martingale/blob/master/little%20details.pdf) for the formula that computes these expected values. The formula is also implemented in the [R](https://github.com/rjwthree/Martingale/blob/master/Martingale.R#L44) and [Python](https://github.com/rjwthree/Martingale/blob/master/Martingale.py#L47) scripts below the main section of code.
